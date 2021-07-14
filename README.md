@@ -1,6 +1,6 @@
-# aiwyq517
 Arduino指纹解锁门禁系统
 
+不足的地方还请各位指正
 Hardware used：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/Picture/Hardware.png)
 Procedure flow：
