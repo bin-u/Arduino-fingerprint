@@ -11,6 +11,7 @@ Procedure flow：
 Loading pictures...
 
 The complete source code and font files are in the source code folder above
+
 完整源码和font文件在上方Source Code文件夹中
 
 ```c++
