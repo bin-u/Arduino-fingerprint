@@ -23,8 +23,8 @@ The complete source code and font files are in the source code folder above
  * 感受BUG 触摸掉帧（参考当前MIUI 夺笋呐）
  * --------------------------------------------------------
  * By: Zyb 
- * bilibili: aiwyq
- * coolapk:  aiwyq
+ * Bilibili: aiwyq
+ * Coolapk:  aiwyq
  * VX /Phone: 17820488893
  *             2021 05.27
  **********************************************************       
@@ -110,13 +110,13 @@ void servopulse(int angle)//MG90S舵机PWM脉冲
 }
 
 
-
-
+/**
+@添加指纹
+*/
 void Add_FR()      
-{                                ///////////////////
-                                 // 添加指纹 函数
-    u8 i,ensure,processnum=0;    // By ZYB  2021 02.02
-    u8 ID_NUM=0;                 ///////////////////
+{  
+    u8 i,ensure,processnum=0;    
+    u8 ID_NUM=0;        
     char str2[10];
     while(1)
     {
