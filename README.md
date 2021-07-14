@@ -1,10 +1,14 @@
 # aiwyq517
 Arduino指纹解锁门禁系统
 
-
-Arduino指纹解锁门禁系统
-![image](https://github.com/aiwyq/aiwyq517/blob/master/buy.jpg)
+Hardware used：
+![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/Picture/Hardware.png)
+Procedure flow：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg)
+Loading pictures...
+
+The complete source code and font files are in the source code folder above
+完整源码和font文件在上方Source Code文件夹中
 ```c++
 /*
  *************更新内容**************************************
