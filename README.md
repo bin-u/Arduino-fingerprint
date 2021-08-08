@@ -9,6 +9,8 @@ Hardware used：
 | 内容 | 内容 |
 | ------ | ------ |
 | 内容 | 内容 |
+
+<br>
 Procedure flow：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg)
 
