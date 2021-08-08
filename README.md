@@ -1,13 +1,13 @@
 
-2##Arduino指纹解锁门禁系统
-支持按键录入指纹、删除指纹、验证指纹并驱动舵机完成开锁动作
+## Arduino指纹解锁门禁系统
+支持按键`录入指纹`、`删除指纹`、`验证指纹`并驱动舵机完成开锁动作
 
 
-4####不足的地方还请各位指正
+##### 不足的地方还请各位指正
 
 <br>
 
-`硬件清单`
+## 硬件清单
 
 
 |材料| 用途 |
@@ -22,7 +22,7 @@
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
 
-`Procedure flow：`
+## Procedure flow：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg) <br>
 Loading pictures...
 
@@ -33,7 +33,7 @@ The complete source code and font files are in the source code folder above
 提取码: hjpt <br>
 
 
-`局部源码：`
+## 局部源码：
 ```c++
 /*
  *************更新内容**************************************
@@ -45,7 +45,6 @@ The complete source code and font files are in the source code folder above
  * Arduino Nano ROM占用由99%降低至69%；
  * 优化系统里流畅度；
  * 提高系统稳定性；
- * 感受BUG 触摸掉帧（参考当前MIUI 夺笋呐）
  * --------------------------------------------------------
  * By: Zyb 
  * Bilibili: aiwyq
@@ -59,8 +58,8 @@ The complete source code and font files are in the source code folder above
 /********请提前装好以下库文件 工具-管理库(Ctrl+Shift+I)*******/
 /**********U8glib库 DHT11库 Adafruit_Fingerprint**********/
 /***报错请自行找原因***/
-#include <U8glib.h>             //u8g库 用于0.96 OLED IIC显示器 修改与21年5.24 原为u8g库
-#include <Adafruit_Fingerprint.h>//AS608指纹
+#include <U8glib.h>             //u8g库 用于0.96 OLED IIC显示器 修改于21年5.24 原为u8g库
+#include <Adafruit_Fingerprint.h>//AS608指纹库
 #include<DHT.h>//温湿度传感  
 
 #include "font.h"                //调用同目录下的字库
