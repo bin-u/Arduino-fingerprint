@@ -6,7 +6,9 @@
 
 
 
-## 效果GIF:
+## 效果图:
+![](https://img-blog.csdnimg.cn/20210603113306129.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/763418ac971e486385dfe6b35d945709.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
 ![csdn](https://img-blog.csdnimg.cn/20210603111950766.gif)
 * 不足之处还请各位指正
 
