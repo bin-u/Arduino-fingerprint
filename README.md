@@ -5,7 +5,10 @@ Arduino指纹解锁门禁系统
 
 Hardware used：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/Picture/Hardware.png)
-
+<br>
+| 内容 | 内容 |
+| ------ | ------ |
+| 内容 | 内容 |
 Procedure flow：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg)
 
@@ -13,12 +16,9 @@ Loading pictures...
 
 The complete source code and font files are in the source code folder above
 
-完整源码和font文件在上方Source Code文件夹中
-
-另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA 
-
-提取码: hjpt
-
+完整源码和font文件在上方Source Code文件夹中<br>
+另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
+提取码: hjpt <br>
 
 ```c++
 /*
