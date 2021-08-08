@@ -11,9 +11,9 @@ Hardware used：
 | 内容 | 内容 |
 
 <br>
-Procedure flow：
-![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg)
 
+Procedure flow：
+![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg) <br>
 Loading pictures...
 
 The complete source code and font files are in the source code folder above
