@@ -26,13 +26,14 @@
 |USB电源模块| 为多级和开发板供电 |
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
+* 合计一百元(2020 12.29)
 
-## Procedure flow：
+## Hardware connection：
 ![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
 
 
 ## Procedure flow：
-![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
+![image](https://img-blog.csdnimg.cn/a01ee9a0a1344d4db2b275144f1bbf0b.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)  <br>
 
 The complete source code and font files are in the source code folder above
 
@@ -65,7 +66,10 @@ The complete source code and font files are in the source code folder above
 
 /********请提前装好以下库文件 工具-管理库(Ctrl+Shift+I)*******/
 /**********U8glib库 DHT11库 Adafruit_Fingerprint**********/
-/***报错请自行找原因***/
+/***报错请可联系我***/
+
+
+
 #include <U8glib.h>             //u8g库 用于0.96 OLED IIC显示器 修改于21年5.24 原为u8g库
 #include <Adafruit_Fingerprint.h>//AS608指纹库
 #include<DHT.h>//温湿度传感  
@@ -368,8 +372,11 @@ void setup()
 
 void loop()
 {
-
    ...
 }
 
 ```
+
+![](https://img-blog.csdnimg.cn/20210603113315174.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20210603113035290.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20210603113323755.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
