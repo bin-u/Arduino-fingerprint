@@ -23,7 +23,8 @@
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
 ## 接线连接
-![jiexian](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg)<br>
+![jiexian](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg) <br>
+
 ## Procedure flow：
 ![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg) <br>
 
