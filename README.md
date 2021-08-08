@@ -23,10 +23,10 @@
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
 ## 接线连接： <br>
-![image](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg)  <br>
+![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
 
 ## Procedure flow：
-![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg)  <br>
+![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
 
 The complete source code and font files are in the source code folder above
 
