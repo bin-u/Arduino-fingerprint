@@ -11,7 +11,7 @@
 ## 硬件清单
 
 
-|`````材料`````|````` 用途````` |
+|`````              材料              `````|`````                 用途                  ````` |
 | ------ | ------ |
 | Arduino Nano |开发板 处理各种数据 |
 | ESP8266 WIFI模块 |用于数据远程传输|
@@ -23,7 +23,7 @@
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
 ## 接线连接:
-![image](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg)  <br>
+![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg)  <br>
 
 ## Procedure flow：
 ![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg)  <br>
@@ -320,218 +320,13 @@ void Add_FR()
 
 void Press_FR()
 {
-                           //////////////////////
-    u8 ensure,i;           // 验证指纹并开锁 函数
-    char str[20];          // By ZYB  2021 02.02
-    char cishu[5];        //////////////////////
-    char wendu[15];
-    char shidu[15];
-    u8g.firstPage();
-    do
-    {
-        u8g.drawXBMP(32,24,64,16,State5);  /* 字串 请按手指   64x16  */
-    }
-    while(u8g.nextPage());
-    while(1)
-    {
-        ensure=finger.getImage();
-        if(ensure==0x00)//获取图像成功
-        {
-            ensure=finger.image2Tz();
-            if(ensure==0x00) //生成特征成功
-            {
-                ensure=finger.fingerFastSearch();
-                if(ensure==0x00)//搜索成功
-                {
-                    MG90S();
-                    q++;
-                    sprintf(str,"ID:%d Score:%d",finger.fingerID,finger.confidence);
-                    sprintf(cishu,"%d",q);
-                    u8g.firstPage();
-                    do
-                    {
-                        u8g.setFont(u8g_font_6x10); // 选择字体
-                        u8g.drawXBMP(16,16,96,16,State13);  //显示指纹搜索成功
-                        u8g.drawStr(100,16,cishu);
-                        u8g.drawStr(1,46,str);
-                    }
-                    while(u8g.nextPage());
-//                    Serial.println("OPEN");
-
-                    delay(401);
-                    key_num=key_scan(0);
-                    if(key_num==1)
-                    {
-                        break;
-                    }
-
-                    t = dht.readTemperature();
-                    h = dht.readHumidity();
-                    delay(100);
-                    sprintf(wendu,"%dC",t);
-                    sprintf(shidu,"%d",h);
-
-                    u8g.firstPage();
-                    do
-                    {
-                        u8g.setFont(u8g_font_6x10);
-                        u8g.drawXBMP(0,0,128,64,HOME);  /* 图片 主页  128x64  */
-                        u8g.drawStr(100,32,wendu);
-                        u8g.drawStr(100,46,shidu);
-                        u8g.drawStr(120,46,"%");
-                    }
-                    while(u8g.nextPage());
-                }
-                else
-                {
-                    u8g.firstPage();
-                    do
-                    {
-                        u8g.drawXBMP(16,16,96,16,State14); //State14_字串 未搜索到指纹 96x16
-                    }
-                    while(u8g.nextPage());
-
-                    delay(600);
-                    u8g.firstPage();
-                    do
-                    {
-                        u8g.setFont(u8g_font_6x10);
-                        u8g.drawXBMP(0,0,128,64,HOME);  /* 图片 主页  128x64  */
-                        u8g.drawStr(100,32,wendu);
-                        u8g.drawStr(100,46,shidu);
-                        u8g.drawStr(120,46,"%");
-                    }
-                    while(u8g.nextPage());
-                    //break;
-                }
-            }
-            else
-            {
-                //ShowErrMessage(ensure);
-            }
-        }
-        delay(200);
-    }
+    ...
 }
 
 
-void Del_FR()          /////////////////////
-{                      ////////////////////
-                       //选择删除指纹函数
-    u8  ensure;        //By ZYB  2021 02.02
-    u8 ID_NUM=0;       /////////////////////
-    char str2[10];
-    sprintf(str2,"ID=0%d",ID_NUM);
-    u8g.firstPage();
-    do
-    {
-        u8g.setFont(u8g_font_6x10);
-        u8g.drawStr(44,62,str2);
-        u8g.drawXBMP(1,0,128,48,State15);  //显示字模汉字
-    }
-    while(u8g.nextPage());
-
-
-
-    while(key_num!=3)
-    {
-        key_num=key_scan(0);
-        if(key_num==2)
-        {
-            key_num=0;
-            if(ID_NUM>0)
-                ID_NUM--;
-            if(ID_NUM<10)
-                sprintf(str2,"ID=0%d",ID_NUM);
-            else
-                sprintf(str2,"ID=%d",ID_NUM);
-            u8g.firstPage();
-            do
-            {
-                u8g.drawStr(44,62,str2);
-            }
-            while(u8g.nextPage());
-
-        }
-        if(key_num==4)
-        {
-            key_num=0;
-            if(ID_NUM<99)
-                ID_NUM++;
-            if(ID_NUM<10)
-                sprintf(str2,"ID=0%d",ID_NUM);
-            else
-                sprintf(str2,"ID=%d",ID_NUM);
-            u8g.firstPage();
-            do
-            {
-                u8g.drawStr(44,62,str2);
-
-            }
-            while(u8g.nextPage());
-
-        }
-        if(key_num==1)
-            goto MENU ; //返回主页面
-        if(key_num==5)
-        {
-            key_num=0;
-            ensure=finger.emptyDatabase();//清空指纹库
-            if(ensure==0)
-            {
-                u8g.firstPage();
-                do
-                {
-                    u8g.drawXBMP(8,16,80,16,State17);  //显示字模汉字
-                    u8g.drawXBMP(88,16,32,16,State19);  //显示字模汉字
-                }
-                while(u8g.nextPage());
-
-            }
-            else
-            {
-                u8g.firstPage();
-                do
-                {
-                    u8g.drawXBMP(8,16,80,16,State17);  //显示字模汉字
-                    u8g.drawXBMP(88,16,32,16,State20);  //显示字模汉字
-
-                }
-                while(u8g.nextPage());
-
-            }
-            delay(1500);
-            goto MENU ; //返回主页面
-        }
-    }
-    ensure=finger.deleteModel(ID_NUM);//删除单个指纹
-    if(ensure==0)
-    {
-        u8g.firstPage();
-        do
-        {
-            u8g.drawXBMP(16,16,64,16,State18);  //显示字模汉字
-            u8g.drawXBMP(80,16,32,16,State19);  //显示字模汉字
-        }
-        while(u8g.nextPage());
-
-
-    }
-    else
-    {
-        u8g.firstPage();
-        do
-        {
-            u8g.drawXBMP(16,16,64,16,State18);  //显示字模汉字
-            u8g.drawXBMP(80,16,32,16,State20);  //显示字模汉字
-
-        }
-        while(u8g.nextPage());
-
-    }
-    delay(1500);
-MENU:
-    key_num=0;
+void Del_FR()  
+{
+    ...
 }
 
 
@@ -568,27 +363,7 @@ void setup()
 void loop()
 {
 
-    key_num = key_scan(0);
-    if(key_num == 1)            //按下K1键 调用Add_FR()
-    {
-        key_num = 0;
-        Add_FR();
-        MENU();
-    }
-
-    if(key_num == 2)            //按下K2键 调用Del_FR();
-    {
-        key_num = 0;
-        Del_FR();
-        MENU();
-    }
-
-    if(key_num == 3)            //按下K3键 调用Press_FR()
-    {
-        key_num = 0;
-        Press_FR();
-        MENU();
-    }
+   ...
 }
 
 ```
