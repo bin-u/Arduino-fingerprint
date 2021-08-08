@@ -3,17 +3,12 @@ Arduino指纹解锁门禁系统
 
 不足的地方还请各位指正
 
-Hardware used：
-![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/Picture/Hardware.png)
 <br>
 |材料| 用途 |
 | ------ | ------ |
 | 开发板Arduino Nano | 大脑 处理各种数据 |
-| ------ | ------ |
 | ESP8266 WIFI模块 |用于数据远程传输|
-| ------ | ------ |
 | AS608指纹模块 | 用于采集指纹 |
-| ------ | ------ |
 | MG90S舵机 | 用于带动门锁 |
 |OLED0.96| 显示系统信息 |
 |4x4矩阵按键| 操作交互 |
