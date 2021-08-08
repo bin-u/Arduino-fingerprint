@@ -22,7 +22,7 @@
 |USB电源模块| 为多级和开发板供电 |
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
-## 接线连接:<br>
+## 接线连接： <br>
 ![image](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg)  <br>
 
 ## Procedure flow：
