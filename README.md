@@ -4,7 +4,7 @@ Arduino指纹解锁门禁系统
 不足的地方还请各位指正
 
 <br>
-
+#硬件清单
 |材料| 用途 |
 | ------ | ------ |
 | 开发板Arduino Nano | 大脑 处理各种数据 |
@@ -17,7 +17,7 @@ Arduino指纹解锁门禁系统
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
 
-Procedure flow：
+#Procedure flow：
 ![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg) <br>
 Loading pictures...
 
@@ -27,6 +27,8 @@ The complete source code and font files are in the source code folder above
 另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
 提取码: hjpt <br>
 
+
+#局部源码：
 ```c++
 /*
  *************更新内容**************************************
