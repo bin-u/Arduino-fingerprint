@@ -4,7 +4,7 @@
 
 在此基础上可添加`ESP8266WIFI`模块实现远程开锁、小爱同学语音控制等功能
 
-· 不足的地方还请各位指正
+*不足之处还请各位指正
 
 <br>
 
@@ -24,7 +24,7 @@
 <br>
 
 ## Procedure flow：
-![image](https://github.com/aiwyq/Arduino-fingerprint/blob/master/LiuCheng.jpg) <br>
+![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg) <br>
 Loading pictures...
 
 The complete source code and font files are in the source code folder above
