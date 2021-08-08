@@ -4,14 +4,14 @@
 
 在此基础上可添加`ESP8266WIFI`模块实现远程开锁、小爱同学语音控制等功能
 
-*不足之处还请各位指正
+* 不足之处还请各位指正
 
 <br>
 
 ## 硬件清单
 
 
-|材料| 用途 |
+|`````材料`````|````` 用途````` |
 | ------ | ------ |
 | Arduino Nano |开发板 处理各种数据 |
 | ESP8266 WIFI模块 |用于数据远程传输|
@@ -22,10 +22,10 @@
 |USB电源模块| 为多级和开发板供电 |
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
-
+## 接线连接
+![jiexian](http://image.coolapk.com/feed/2021/0312/07/634866_bfcef165_4090_6623@2907x1888.jpeg.m.jpg)<br>
 ## Procedure flow：
 ![image](http://image.coolapk.com/feed/2021/0312/07/634866_14feb4f8_4062_0358@2333x2487.jpeg.m.jpg) <br>
-Loading pictures...
 
 The complete source code and font files are in the source code folder above
 
