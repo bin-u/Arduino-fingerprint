@@ -21,8 +21,8 @@
 |USB电源模块| 为多级和开发板供电 |
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
-        * 所有模块满载功耗约为0.4瓦  使用USB-A口供电<br>
-        * 合计一百元(时间2020 12.29)<br>
+        所有模块满载功耗约为0.4瓦  使用USB-A口供电<br>
+        合计一百元(时间2020 12.29)<br>
 
 若当前页面加载缓慢，请访问`Github镜像`：<br>
 https://hub.fastgit.org/aiwyq/Arduino-fingerprint  <br>
