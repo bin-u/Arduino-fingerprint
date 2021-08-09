@@ -1,0 +1,83 @@
+#include <Adafruit_Fingerprint.h>
+#include <SoftwareSerial.h>
+#include <Servo.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h> //引用 I2C 库
+int getFingerprintIDez();
+// pin #2 is IN from sensor (GREEN wire)
+// pin #3 is OUT from arduino (WHITE wire)
+SoftwareSerial mySerial(2, 3);//新建一个名为 mySerial 的软串口,并将 2 号引脚作为 RX 端,3
+号引脚作为 TX 端
+Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
+Servo myservo; //创建一个舵机控制对象
+int pos = 0; // 该变量用与存储舵机角度位置
+LiquidCrystal_I2C lcd(0x27,16,2); //设置LCD1602设备地址，这里的地址是0x3F，一般是0x20，
+或者 0x27，具体看模块手册
+void setup()
+{
+ myservo.attach(11); // 该舵机由 arduino 第脚十一控制
+ lcd.init(); // 初始化 LCD
+ lcd.backlight(); //设置 LCD 背景等亮
+ Serial.begin(9600); // 初始化串口通信
+ Serial.println("fingertest");//输出 fingertest
+ // set the data rate for the sensor serial port
+ finger.begin(9600);//设置传感器串行端口的数据速率
+
+ if (finger.verifyPassword()) { //查看指纹传感器是否存在
+ Serial.println("Found fingerprint sensor!");
+ } else {
+ Serial.println("Did not find fingerprint sensor :(");
+ while (1);
+ }
+ Serial.println("Waiting for valid finger...");
+}
+void loop() // run over and over again
+{
+ lcd.setCursor(0,0); //设置显示指针
+ lcd.print("Put on your finger"); //输出字符到 LCD1602 上
+ delay(1000);
+ getFingerprintIDez(); //拍摄指纹图像
+ delay(50); //don't ned to run this at full speed.
+}
+uint8_t getFingerprintID() {
+ uint8_t p = finger.getImage();
+ p = finger.image2Tz();//p = 指纹图像 2Tz
+ p = finger.fingerFastSearch();//指纹快速搜索
+
+ Serial.print("Found ID #"); Serial.print(finger.fingerID);
+ Serial.print(" with confidence of "); Serial.println(finger.confidence);
+}
+// returns -1 if failed, otherwise returns ID #
+int getFingerprintIDez() {
+ uint8_t p = finger.getImage();
+ if (p != FINGERPRINT_OK) return -1;
+ p = finger.image2Tz();//p=手指图像 2tz();
+ if (p != FINGERPRINT_OK) return -1;//如果（p！=FINGERPRINT_OK）返回-1；
+ p = finger.fingerFastSearch();//p=手指。手指快速搜索();
+ if (p != FINGERPRINT_OK) return -1;//如果（p！=FINGERPRINT_OK）返回-1；
+
+ // found a match!
+ lcd.setCursor(0,0); //设置显示指针
+ lcd.print("Welcome to 307"); //输出字符到 LCD1602 上
+ lcd.setCursor(0,1);
+ lcd.print(" --wdnmd");
+ delay(1000);
+ for(pos = 0; pos < 180; pos += 1) // 从 0 度到 180 度运动
+ { // 每次步进一度
+ myservo.write(pos); // 指定舵机转向的角度
+ delay(20); // 等待 15ms 让舵机到达指定位置
+ }
+ delay(2500); //等待 2.5s
+ for(pos = 180; pos>=1; pos-=1) //从 180 度到 0 度运动
+ {
+ myservo.write(pos); // 指定舵机转向的角度
+ delay(20); // 等待 15ms 让舵机到达指定位置
+ }
+
+/* Serial.print("Found ID #");
+ Serial.print(finger.fingerID);
+ Serial.print(" with confidence of ");
+ Serial.println(finger.confidence);
+*/
+ return finger.fingerID;
+}
