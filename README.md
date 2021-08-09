@@ -43,10 +43,6 @@ The complete source code and font files are in the source code folder above
 另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
 提取码: hjpt <br>
 
-
-## 局部源码：
-```c++
-/*
  *************更新内容**************************************
  * 更新于2021年5月27日  B站这个视频终于10万播放量了
  * 更新一下新的代码叭：
@@ -72,12 +68,15 @@ The complete source code and font files are in the source code folder above
 
 
 
-#include <U8glib.h>             //u8g库 用于0.96 OLED IIC显示器 修改于21年5.24 原为u8g库
-#include <Adafruit_Fingerprint.h>//AS608指纹库
-#include<DHT.h>//温湿度传感  
+## 局部源码：
+```c++
+/*
 
-#include "font.h"                //调用同目录下的字库
-DHT dht(7,DHT11);//温湿度data接脚
+#include <U8glib.h>                 //u8g库 用于0.96 OLED IIC显示器 修改于21年5.24 原为u8g库
+#include <Adafruit_Fingerprint.h>   //AS608指纹库
+#include<DHT.h>                     //温湿度传感  
+#include "font.h"                   //调用同目录下的字库
+DHT dht(7,DHT11);                   //温湿度data接脚
 #ifdef U8X8_HAVE_HW_I2C
 #endif
 U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE | U8G_I2C_OPT_DEV_0);  // I2C / TWI
@@ -87,7 +86,7 @@ U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE | U8G_I2C_OPT_DEV_0);  // I2C / TWI
 #define KEY3 4
 #define KEY4 5
 #define KEY5 6
-SoftwareSerial mySerial(11,12);//新建一个名为mySerial的软串口 并将11号引脚作为RX端 12号引脚作为TX端
+SoftwareSerial mySerial(11,12);     //新建一个名为mySerial的软串口 并将11号引脚作为RX端 12号引脚作为TX端
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
 u16 q=1024,t,h;     //累计开门次数、温度、湿度
 u8 key_num=0;
@@ -103,8 +102,8 @@ void key_init()
 
 u8 key_scan(u8 mode)
 {
-    static u8 key_up=1;//按键按松开标志
-    if(mode)key_up=1;  //支持连按
+    static u8 key_up=1;         //按键按松开标志
+    if(mode)key_up=1;           //支持连按
     if(key_up&&(digitalRead(KEY1)==0||digitalRead(KEY2)==0||
                 digitalRead(KEY3)==0||digitalRead(KEY4)==0||digitalRead(KEY5)==0))
     {
@@ -119,7 +118,7 @@ u8 key_scan(u8 mode)
     else if(digitalRead(KEY1)==1&&digitalRead(KEY2)==1&&
             digitalRead(KEY3)==1&&digitalRead(KEY4)==1&&digitalRead(KEY5)==1)
         key_up=1;
-    return 0;// 无按键按下
+    return 0;   // 无按键按下
 }
 
 
