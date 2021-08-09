@@ -3,14 +3,7 @@
 支持按键`录入指纹`、`删除指纹`、`验证指纹`并驱动舵机完成开锁动作
 
 在此基础上可添加`ESP8266WIFI`模块实现远程开锁、小爱同学语音控制等功能
-
-
-
-## 效果图:
-![](https://img-blog.csdnimg.cn/20210603113306129.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
-![](https://img-blog.csdnimg.cn/763418ac971e486385dfe6b35d945709.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
-![csdn](https://img-blog.csdnimg.cn/20210603111950766.gif)
-
+ >所有模块满载功耗约为0.4瓦  使用USB-A口供电<br>
 
 <br>
 
@@ -28,7 +21,14 @@
 |USB电源模块| 为多级和开发板供电 |
 |DHT11温度传感器| 采集环境温度与湿度 |
 <br>
-* 合计一百元(2020 12.29)
+* 合计一百元(2020 12.29)<br>
+若当前页面加载缓慢，请访问Github镜像：<br>
+https://hub.fastgit.org/aiwyq/Arduino-fingerprint  <br>
+
+## 效果图:
+![](https://img-blog.csdnimg.cn/20210603113306129.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/763418ac971e486385dfe6b35d945709.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
+![csdn](https://img-blog.csdnimg.cn/20210603111950766.gif)
 
 ## Hardware connection：
 ![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
