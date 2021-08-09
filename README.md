@@ -43,7 +43,7 @@ The complete source code and font files are in the source code folder above
 另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
 提取码: hjpt <br>
 
- *************更新内容**************************************
+ *************更新内容********************************
  * 更新于2021年5月27日  B站这个视频终于10万播放量了
  * 更新一下新的代码叭：
  * 
@@ -62,9 +62,9 @@ The complete source code and font files are in the source code folder above
  */
 
 
-请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`
-`U8glib库` `DHT11库` `Adafruit_Fingerprint库`
-`报错可联系我 欢迎交流意见`
+请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`<br>
+`U8glib库` `DHT11库` `Adafruit_Fingerprint库`<br>
+`报错可联系我 欢迎交流意见`<br>
 * 不足之处还请各位指正
 
 
