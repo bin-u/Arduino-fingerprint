@@ -10,7 +10,7 @@
 ![](https://img-blog.csdnimg.cn/20210603113306129.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)
 ![](https://img-blog.csdnimg.cn/763418ac971e486385dfe6b35d945709.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
 ![csdn](https://img-blog.csdnimg.cn/20210603111950766.gif)
-* 不足之处还请各位指正
+
 
 <br>
 
@@ -62,9 +62,10 @@ The complete source code and font files are in the source code folder above
  */
 
 
-/********请提前装好以下库文件 工具-管理库(Ctrl+Shift+I)*******/
-/**********U8glib库 DHT11库 Adafruit_Fingerprint**********/
-/***报错请可联系我***/
+请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`
+`U8glib库` `DHT11库` `Adafruit_Fingerprint库`
+`报错可联系我 欢迎交流意见`
+* 不足之处还请各位指正
 
 
 
