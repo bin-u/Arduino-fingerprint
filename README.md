@@ -59,8 +59,8 @@ The complete source code and font files are in the source code folder above
 提取码：2021 <br>
 依次勾选开发板型号、端口号 <br>
 <br>
-<br>
 ![](https://img-blog.csdnimg.cn/405d608d585442f8a9039e7cb8b47ff1.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center) <br>
+<br>
 ![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
 
  *************更新内容********************************
