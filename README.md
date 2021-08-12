@@ -46,6 +46,21 @@ The complete source code and font files are in the source code folder above
 另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
 提取码: hjpt <br>
 
+## 驱动文件以及配置烧录环境
+
+#### 驱动文件
+
+**Arduino CH340驱动**
+链接：https://pan.baidu.com/s/1Jo0fVYdAcBBleallQAm4wg <br>
+提取码：2021
+#### 配置编译器
+**Arduino IDE1.8.15**
+链接：https://pan.baidu.com/s/1OUqRsGI-ZgVyFzZ3q8QqFg <br>
+提取码：2021 <br>
+依次勾选开发板型号、端口号 <br>
+![](https://img-blog.csdnimg.cn/405d608d585442f8a9039e7cb8b47ff1.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center) <br>
+![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
+
  *************更新内容********************************
  * 更新于2021年5月27日  B站这个视频终于10万播放量了
  * 更新一下新的代码叭：
