@@ -33,11 +33,11 @@ https://hub.fastgit.org/aiwyq/Arduino-fingerprint  <br>
 ![](https://img-blog.csdnimg.cn/763418ac971e486385dfe6b35d945709.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
 ![csdn](https://img-blog.csdnimg.cn/20210603111950766.gif)
 
-## Hardware connection：
+## 硬件接线：
 ![image](https://img-blog.csdnimg.cn/20210603112422449.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70)  <br>
 
 
-## Procedure flow：
+## 程序流程图：
 ![image](https://img-blog.csdnimg.cn/a01ee9a0a1344d4db2b275144f1bbf0b.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)  <br>
 
 The complete source code and font files are in the source code folder above
