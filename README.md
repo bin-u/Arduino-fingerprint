@@ -63,9 +63,9 @@ The complete source code and font files are in the source code folder above
 <br>
 ![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)<br>
 /*<br>
- *************更新内容**************************************<br>
+ * ************更新内容*************************************<br>
  *更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能<br>
- *--------------------------------------------------------<br>
+ * --------------------------------------------------------<br>
  * 历史：<br>
  * 更新于2021年5月27日  B站这个视频终于10万播放量了<br>
  * 更新一下新的代码叭：<br>
@@ -92,7 +92,6 @@ The complete source code and font files are in the source code folder above
 
 ## 局部源码：
 ```c++
-/*
 
 #include <U8glib.h>                 //u8g库 用于0.96 OLED IIC显示器 修改于21年5.24 原为u8g库
 #include <Adafruit_Fingerprint.h>   //AS608指纹库
