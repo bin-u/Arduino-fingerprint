@@ -10,7 +10,7 @@
 ## 硬件清单
 
 
-|`````——————————材料—————————— `````|`````——————————用途——————————````` |
+|`````材料 `````|`````用途````` |
 | ------ | ------ |
 | Arduino Nano |开发板 处理各种数据 |
 | ESP8266 WIFI模块 |用于数据远程传输|
@@ -61,27 +61,27 @@ The complete source code and font files are in the source code folder above
 <br>
 ![](https://img-blog.csdnimg.cn/405d608d585442f8a9039e7cb8b47ff1.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center) <br>
 <br>
-![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
-/*
- *************更新内容**************************************
- *更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能
- *--------------------------------------------------------
- * 历史：
- * 更新于2021年5月27日  B站这个视频终于10万播放量了
- * 更新一下新的代码叭：
- * 
- * 将之前的u8g2库更改为u8g库；
- * 功能不变的下精简优化了代码 减少体积30%
- * Arduino Nano ROM占用由99%降低至69%；
- * 优化系统里流畅度；
- * 提高系统稳定性；
- * 感受BUG 触摸掉帧
- * --------------------------------------------------------
- * By: Zyb 
- * bilibili: aiwyq
- * coolapk:  aiwyq
- * --------------------------------------------------------       
- */
+![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)<br>
+/*<br>
+ *************更新内容**************************************<br>
+ *更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能<br>
+ *--------------------------------------------------------<br>
+ * 历史：<br>
+ * 更新于2021年5月27日  B站这个视频终于10万播放量了<br>
+ * 更新一下新的代码叭：<br>
+ * <br>
+ * 将之前的u8g2库更改为u8g库；<br>
+ * 功能不变的下精简优化了代码 减少体积30%<br>
+ * Arduino Nano ROM占用由99%降低至69%；<br>
+ * 优化系统里流畅度；<br>
+ * 提高系统稳定性；<br>
+ * 感受BUG 触摸掉帧<br>
+ * --------------------------------------------------------<br>
+ * By: Zyb <br>
+ * bilibili: aiwyq<br>
+ * coolapk:  aiwyq<br>
+ * --------------------------------------------------------    <br>   
+ */<br>
 
 请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`<br>
 `U8glib库` `DHT11库` `Adafruit_Fingerprint库`<br>
