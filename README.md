@@ -43,8 +43,8 @@ https://hub.fastgit.org/aiwyq/Arduino-fingerprint  <br>
 The complete source code and font files are in the source code folder above
 
 完整源码和font文件在上方Source Code文件夹中<br>
-另附百度网盘链接: https://pan.baidu.com/s/1KsvAKneo3ZYYGctuGGUrmA <br>
-提取码: hjpt <br>
+另附百度网盘链接:https://pan.baidu.com/s/1imgY0jX2iXzc8zxHfYLh1A 
+提取码：2021
 
 ## 驱动文件以及配置烧录环境
 
@@ -62,8 +62,11 @@ The complete source code and font files are in the source code folder above
 ![](https://img-blog.csdnimg.cn/405d608d585442f8a9039e7cb8b47ff1.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center) <br>
 <br>
 ![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)
-
- *************更新内容********************************
+/*
+ *************更新内容**************************************
+ *更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能
+ *--------------------------------------------------------
+ * 历史：
  * 更新于2021年5月27日  B站这个视频终于10万播放量了
  * 更新一下新的代码叭：
  * 
@@ -72,15 +75,13 @@ The complete source code and font files are in the source code folder above
  * Arduino Nano ROM占用由99%降低至69%；
  * 优化系统里流畅度；
  * 提高系统稳定性；
+ * 感受BUG 触摸掉帧
  * --------------------------------------------------------
  * By: Zyb 
- * Bilibili: aiwyq
- * Coolapk:  aiwyq
- * VX /Phone: 17820488893
- *             2021 05.27
- **********************************************************       
+ * bilibili: aiwyq
+ * coolapk:  aiwyq
+ * --------------------------------------------------------       
  */
-
 
 请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`<br>
 `U8glib库` `DHT11库` `Adafruit_Fingerprint库`<br>
