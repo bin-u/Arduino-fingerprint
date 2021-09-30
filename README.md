@@ -55,7 +55,7 @@ The complete source code and font files are in the source code folder above
 提取码：2021
 #### 配置编译器
 **Arduino IDE1.8.15**
-链接：https://pan.baidu.com/s/1OUqRsGI-ZgVyFzZ3q8QqFg <br>
+链接：https://pan.baidu.com/s/1px2bP61HsVjVWAe_5ZAz_A  <br>
 提取码：2021 <br>
 依次勾选开发板型号、端口号 <br>
 <br>
@@ -63,28 +63,13 @@ The complete source code and font files are in the source code folder above
 <br>
 ![](https://img-blog.csdnimg.cn/4aa7de9d0a0d4512ac2bb649f0c56657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpd3lxcQ==,size_16,color_FFFFFF,t_70#pic_center)<br>
 /*<br>
- * ************更新内容*************************************<br>
- *更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能<br>
- * --------------------------------------------------------<br>
- * 历史：<br>
- * 更新于2021年5月27日  B站这个视频终于10万播放量了<br>
- * 更新一下新的代码叭：<br>
- * <br>
- * 将之前的u8g2库更改为u8g库；<br>
- * 功能不变的下精简优化了代码 减少体积30%<br>
- * Arduino Nano ROM占用由99%降低至69%；<br>
- * 优化系统里流畅度；<br>
- * 提高系统稳定性；<br>
- * 感受BUG 触摸掉帧<br>
- * --------------------------------------------------------<br>
- * By: Zyb <br>
- * bilibili: aiwyq<br>
- * coolapk:  aiwyq<br>
- * --------------------------------------------------------    <br>   
- */<br>
+ * 更新内容<br>
+        更新于2021.9.22  新增 主页面摁下K4进入设置舵机转动角度功能<br>
+ 
 
-请提前装好以下库文件 `工具-管理库(Ctrl+Shift+I):`<br>
-`U8glib库` `DHT11库` `Adafruit_Fingerprint库`<br>
+请提前装好以下库文件<br>
+`工具-管理库(Ctrl+Shift+I):`<br>
+`U8glib库`<br>`DHT11库`<br>`Adafruit_Fingerprint库`<br>
 `报错可联系我 欢迎交流意见`<br>
 * 不足之处还请各位指正
 
